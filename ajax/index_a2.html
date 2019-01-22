@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ajax</title>
+</head>
+<body>
+	<form action="http://ajax.markello.info/a2.php" method="POST">
+		<input type="text" name="year" required="{4}">
+		<input type="submit" value="Send" id="btn">
+	</form>
+	<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript">
+		$('#btn').click(function(){
+			var str = $(this).serialize();
+			$.ajax({
+				url:'http://ajax.markello.info/a2.php',
+				type: 'POST',
+				data:str,
+			});
+		}) ;
+	</script>
+
+</body>
+</html>

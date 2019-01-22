@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ajax</title>
+</head>
+<body>
+
+	<form action="http://ajax.markello.info/a3.php" method="POST">
+		<input type="radio" name="sex" value="man">Male <br>
+		<input type="radio" name="sex" value="woman">Female <br>
+		<input type="range" name="height" min="160" max="180" step="5" value="160">
+		<input type="submit" value="Send" id="btn">
+	</form>
+
+	<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript">
+		$('#btn').click(function(){
+			var str = $(this).serialize();
+			$.ajax({
+				url:'http://ajax.markello.info/a3.php',
+				type: 'POST',
+				data:str,
+			});
+		}) ;
+	</script>
+
+</body>
+</html>
