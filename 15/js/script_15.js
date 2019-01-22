@@ -1,0 +1,1 @@
+$('b').parent('.www, p').css({'color':'red', 'font-size':'30px'});

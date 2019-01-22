@@ -1,0 +1,1 @@
+$('h2').nextUntil('h2').children('p').html('Замена');

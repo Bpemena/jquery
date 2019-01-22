@@ -1,0 +1,1 @@
+$('#test').children('p').append('!').not('.www').css('color','red');

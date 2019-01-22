@@ -1,0 +1,1 @@
+$('li').empty(':even').remove(':odd');

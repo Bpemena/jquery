@@ -1,0 +1,1 @@
+$('#test').insertAfter($('#test').next());

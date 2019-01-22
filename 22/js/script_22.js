@@ -1,0 +1,1 @@
+$('p.www').css('color','red').filter(':first').prepend('!').end().filter(':last').append('?');
