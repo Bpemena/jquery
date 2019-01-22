@@ -1,5 +1,6 @@
 var sum = 0;
-$('div').height(function (index, value) {
-	sum +=value;
+$('div').each(function() {
+	var $height = $(this).height();
+	sum += $height;
 });
 console.log(sum);
